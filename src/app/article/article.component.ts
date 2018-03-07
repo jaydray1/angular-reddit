@@ -9,10 +9,10 @@ import { Article } from '../article/article.model';
 export class ArticleComponent implements OnInit {
   @HostBinding('attr.class') cssClass = 'row';
   @Input() article: Article;
-  article: Article;
+  // article: Article;
 
   constructor() {}
-  
+
    voteUp(): boolean {
      this.article.voteUp();
      return false;
